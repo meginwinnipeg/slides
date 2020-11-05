@@ -15,7 +15,7 @@ body {
 
 
 body:after {
-content: url(./img/UM-Libraries-cmyk-vert.png);
+content: url(https://meginwinnipeg.github.io/slides/img/UM-Libraries-cmyk-vert.png);
 position: fixed;
 bottom: .5em;
 left: 1.5em; }
