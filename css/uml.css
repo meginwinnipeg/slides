@@ -11,8 +11,8 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fff;
-  background-color: #fff; }
+  background: #E5E5E5;
+  background-color: #E5E5E5; }
 
 
 body:after {
