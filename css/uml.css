@@ -15,7 +15,7 @@ body {
   background-color: #EDEDED; }
 
 body:after {
-content: url(./img/logo.png);
+content: url(http://gis.sites.olt.ubc.ca/files/2019/05/logo.png);
 position: fixed;
 bottom: .5em;
 left: 1.5em; }
