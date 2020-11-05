@@ -16,7 +16,7 @@ body {
 
 
 body:after {
-content: url(https://meginwinnipeg.io/slides/img/UM-Libraries-cmyk-vert.png);
+content: url(/img/UM-Libraries-cmyk-vert.png);
 position: fixed;
 bottom: .5em;
 left: 1.5em; }
@@ -84,7 +84,7 @@ font-family: 'Didact Gothic', sans-serif;
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #200800;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
