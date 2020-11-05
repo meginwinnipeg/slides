@@ -17,7 +17,7 @@ body {
 
 body:after {
 content: url(./img/UM-Libraries-cmyk-vert.png);
-width: 160pt;
+width: 160px;
 position: fixed;
 bottom: .5em;
 left: 1.5em; }
