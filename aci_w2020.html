@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Open Data: Manitoba Annual Crop Inventory</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/uml.css">				
+		<!-- emoji style -->
+		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!-- Theme for emoji styles -->
+		<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+		
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+				<h3><br> Open Data: <br> <i class="em-svg em-corn" aria-role="presentation" aria-label="EAR OF MAIZE"></i> Annual Crop Inventory<i class="em-svg em-seedling" aria-role="presentation" aria-label="SEEDLING"></i></h3>
+					<hr>
+					<br>
+					<p style="text-align:center;">Meg Miller - GIS & Data Visualization Librarian</p><br>
+					<p style="text-align:right;font-size:75%;">slides: <a href = "https://bit.ly/aci_w2020" target="_blank">bit.ly/aci_w2020 </a></p>
+					 
+					<aside class="notes">
+						Research Services Digital Strategies Team,
+						Ex cartographer,
+						Elizabeth Dafoe, now virtual,
+						Answer common questions about accessing and using the federal crop inventory.
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-white_check_mark" aria-role="presentation" aria-label="WHITE HEAVY CHECK MARK"></i> Objectives </h4><hr>
+						<ul style='font-size:90%;'>
+							<li>Discuss differences between proprietary and open data;</li> <br>
+							<li>Gain familiarity with popular visualization software and what is supported through the University;</li><br>
+							<li>Understand how to implement efficient workflows when working with the ACI.</li>
+						</ul>
+					<aside class="notes"> 
+						What i want you to learn from the session
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-pencil2" aria-role="presentation" aria-label="PENCIL"></i> Outline </h4><hr>
+						<ol style='font-size:85%;'>
+							<li>Overview of data licenses;</li>
+							<li>UM software access points;</li>
+							<li>Explore:
+								<ul style='font-size:85%;'>
+									<li>Access</li> 
+									<li>Metadata</li>
+								</ul>
+								</li>
+							<li>Workflows for interacting with ACI using GIS software;
+								<ul style='font-size:85%;'>
+									<li>File Size</li>
+									<li>Data Classification</li>
+									<li>Projections</li>
+								</ul>
+								</li>
+							<li>Research Integration Tips.</li>
+						</ol>
+					<aside class="notes"> 
+						What we're covering to meet the previously mentioned ojectives
+					</aside>
+				</section>
+				
+				
+				<section>
+					<h4> Data Licenses: </h4><hr>
+						<p style="text-align:left;"><i class="em-svg em-unlock" aria-role="presentation" aria-label="OPEN LOCK"></i> Open Data </p>
+						<p style="text-align:left;"><i class="em-svg em-lock" aria-role="presentation" aria-label="LOCK"></i> Licensed/ Proprietary Data </p>
+					<aside class="notes"> 
+						Open data is defined by the gvt of canada as structured data that is machine-readable, freely shared, used and built on without restrictions. <br>
+						The key things to remember about open data are:<br>
+							Availability and access: the data must be available as a whole and at no more than a reasonable reproduction cost, preferably by downloading over the internet. The data must also be available in a convenient and modifiable form. <br>
+   							Re-use and redistribution: the data must be provided under terms that permit re-use and redistribution including the intermixing with other datasets.<br>
+    							Universal participation: everyone must be able to use, re-use and redistribute. There should be no discrimination against fields of endeavour or against persons or groups. For example, 'non-commercial' restrictions that would prevent 'commercial' use, or restrictions of use for certain purposes (e.g. only in education), are not allowed.<br>
+						Not all data can be open data. Sometimes an organization is unable to release certain data as open data because of certain restrictions.
+							<ol>
+							<li>Privacy: A dataset or information that contains personal information about an individual </li>
+							<li>Security: Information or data that may pose security risks to the institution, to the government, or to vulnerable or targeted individuals</li>
+							<li>Confidentiality: Information or data that impairs the government’s ability to make some decisions</li>
+							<li>Legacy information or data: Sometimes there is a substantive cost to making the resource eligible for release (for example, digitizing the resource, formatting it, ensuring it’s accessible)</li>
+							<li>Legal and contractual limitations: A dataset may be subject to legal or contractual agreements that prevent it from being released. Agreements may include:</li>
+							<ol>
+								<li>limitations in data sharing agreements and memoranda of understanding</li>
+    								<li>third party data - government organizations that collect data for federal use, but where the federal organization may not have the rights to publish it on open.canada.ca</li>
+    								<li>commercial license - data purchased from third parties, which may have limited rights for distribution</li>
+    								<li>vendor limitations – data that is delivered under a contract, which captures exclusions for extracting and manipulating data </li>
+    								<li>non-disclosure agreements</li>
+								<li>solicitor-client privilege</li>
+							</ol>
+						</ol>
+							(https://open.canada.ca/en/open-data-principles)<br>
+						<em>Proprietary data</em> refers to data that is controlled or owned by an organization. It's protected by copyright, trade secret laws, and even a patent agreement. Accessing this data usually means paying a sum of money and entering into an agreement with the license holder. <br>
+					</aside>
+				</section>
+				
+				<section>
+					<h4>  Library Access Points: </h4><hr>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> LibGuides </p>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> GISHub (coming soon!) </p>
+					<aside class="notes">
+						How can the Library help you?
+					</aside>
+				</section>
+				
+				<section class="fig-container" data-file="https://umanitoba.ca/libraries/">
+					<aside class="notes">
+						Tour time :)
+					</aside>
+				</section>
+				
+				<section class="fig-container" data-file="https://libguides.lib.umanitoba.ca/c.php?g=298428&p=5076436">
+					<aside class="notes">
+						Think of who is going to be creating what you are looking for, and what format it might be in.1	qqqqqqqqqqq
+					</aside>
+				</section>
+				
+				<section>
+					<h4>  <i class="em-svg em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i>Explore Open Data</h4><hr>
+					<div style='text-align:left;'>
+						<ol style="text-align:left; padding-left:25px;">
+							<li>Winnipeg Open Data</li> 
+							<li>Manitoba Land Inventory (MLI)</li> 
+							<li>GeoGratis</li> 
+							<li>OpenStreetMap (OSM)</li>
+						</ol>
+						</div>
+					<aside class="notes">
+						Four main portals for geospatial data
+					</aside>
+				</section>
+				
+				<section data-background-image="img/cow.png">
+					<div class="image-slide">
+					<h3><a href = "https://data.winnipeg.ca/" target="_blank">data.winnipeg.ca</a></h3>
+					</div>
+					<aside class="notes">
+						Tour time :)
+					</aside>
+				</section>
+				
+				<section data-background-image="img/mli.png">
+					<div class="image-slide">
+					<h3><a href = "http://mli2.gov.mb.ca/" target="_blank">mli2.gov.mb.ca</a></h3>
+					</div>
+					<aside class="notes">
+						Tour time :)
+					</aside>
+				</section>
+				
+				<section data-background-image="img/geog.png">
+					<div class="image-slide">
+					<h3><a href = "https://geogratis.gc.ca/" target="_blank">geogratis.gc.ca</a></h3>
+					</div>
+					<aside class="notes">
+						Tour time :)
+					</aside>
+				</section>
+				
+				<section data-background-image="img/osm.png">
+					<div class="image-slide">
+					<h3><a href = "https://www.openstreetmap.org/#map=11/49.8577/-97.0852" target="_blank">openstreetmap.org</a></h3>
+					</div>
+					<aside class="notes">
+						Tour time :)
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-closed_lock_with_key" aria-role="presentation" aria-label="CLOSED LOCK WITH KEY"></i>Accessing Proprietary Data</h4><hr>
+					<p style='text-align:left;'>City of Winnipeg submission:</p>
+						<ol style = 'font-size:90%;'>
+							<li>Coverpage</li> 
+							<li>Contracts form</li> 
+							<li>Data sharing agreement (stamped and signed by legal)</li> 
+							<li>Screenshot of study area</li>
+						</ol>
+					<aside class="notes">
+						Meg can facilitate this
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-sos" aria-role="presentation" aria-label="SQUARED SOS"></i> Time Saving Tips:</h4><hr>
+					<div style='text-align:left;'>
+						<ul style = 'padding-left:25px;'>
+							<li>Timelines</li> 
+							<li>Projections</li> 
+							<li>Licenses</li> 
+							<li>Currency</li>
+						</ul>
+					</div>
+					<aside class="notes">
+						Major considerations
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-desktop_computer" aria-role="presentation" aria-label=""></i>Upcoming Fall/ Winter Sessions<i class="em-svg em-desktop_computer" aria-role="presentation" aria-label=""></i></h4> <hr>
+							<ul style='text-indent: 5px; font-size:70%;'>
+								<li><del>October 28:</del> <a href = "https://lib-umanitoba.libcal.com/event/3576436" target="_blank">Intro. to Data Visualization - Sciences </a></li>
+								<li><del>November 18th:</del> <a href = "https://lib-umanitoba.libcal.com/event/3576413" target="_blank">Accessing Geospatial Data for Winnipeg & Manitoba</a></li>
+								<li><del>December 2nd:</del> <a href = "https://lib-umanitoba.libcal.com/event/3576419" target="_blank">Open Data: Manitoba Crop Inventory</a></li>
+								<li>January 20th: <a href = "https://lib-umanitoba.libcal.com/event/3576443" target="_blank">QGIS 1: A Gentle Introduction to Open Source GIS Software</a></li>
+								<li>Feburary 10th: <a href = "https://lib-umanitoba.libcal.com/event/3576456" target="_blank">PowerBI 1: A Gentle Introduction to Data Visualization</a></li>
+								<li>Feburary 24th: <a href = "https://lib-umanitoba.libcal.com/event/3576400" target="_blank">Infographics: An Introduction</a></li>
+								<li>March 10th: <a href = "https://lib-umanitoba.libcal.com/event/3576403" target="_blank">ArcGIS Spatial Analytics: Insights & Dashboards for ArcGIS</a></li>
+								<li>March 24th: <a href = "https://lib-umanitoba.libcal.com/event/3576404" target="_blank">Data Visualization: the Good, the Bad and the Ugly</a></li>
+								<li>April 7th: <a href = "https://lib-umanitoba.libcal.com/event/3576405" target="_blank">Network Analysis and Visualization Using Gephi - An Introduction</a></li>
+							</ul>
+						<small>(Wednesdays 12:00 to 13:00)</small>
+	
+					<aside class="notes">
+						Sessions in the coming months, all these are clickable links
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Questions<i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i></h4>
+					<hr>
+					<br>
+					<a href = "mailto:meg.miller@umanitoba.ca" target="_blank">meg.miller@umanitoba.ca</a><br><br>
+					slides: <a href = "https://bit.ly/aci_w2020" target="_blank">bit.ly/aci_w2020 </a>
+					<aside class="notes">
+						Thanks for coming!
+					</aside>
+				</section>
+								
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/reveald3.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
