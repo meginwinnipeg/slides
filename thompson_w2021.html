@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Data Visualization at UML</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/uml.css">				
+		<!-- emoji style -->
+		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!-- Theme for emoji styles -->
+		<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+		
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			<!-- Img credit: R. W. Murchie and H. C. Grant. Unused Lands of Manitoba: Report of Survey. Winnipeg: Manitoba Dept. of Agriculture and Immigration, 1926, map 10.-->
+				<section data-background-image="imgs/histmbcrop.jpeg">
+					<div class="image-slide">
+					<h3>Data Visualization with <br> University of Manitoba Libraries</h3><hr>
+					<p style="text-align:center;">Meg Miller - GIS & Data Visualization Librarian</p>
+					</div>
+					<aside class="notes">	
+					</aside>
+				</section>
+			
+				<section>
+					<h4><i class="em-svg em-pencil2" aria-role="presentation" aria-label="PENCIL"></i> Outline </h4><hr>
+						<div style="text-align:left;">
+						<ol style='font-size:90%;'>
+							<li>Who is Meg?</li>
+							<li>How is research vis. supported by campus libraries?</li>
+							<li>Example Cases</li>
+							<li>Your Questions</li>
+						</ol>
+						</div>
+					<aside class="notes"> 
+					</aside>
+				</section>
+				
+				<section>
+					<h4> Who is Meg?</h4><br>
+						<h3><i class="em-svg em-computer" aria-role="presentation" aria-label="computer"></i> <i class="em-svg em-world_map" aria-role="presentation" aria-label=""></i> <i class="em-svg em-juggling" aria-role="presentation" aria-label="Juggling lady"></i> <i class="em-svg em---1" aria-role="presentation" aria-label="thumbs up"></i> </h3>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-sos" aria-role="presentation" aria-label="SQUARED SOS"></i> What can I help you with? </h4><hr><br>
+					<div style='text-indent: 10px;'>
+						<ol style='font-size:90%;'>
+							<li>Finding spatial data for research or secondary data sets to support your analysis;</li>
+							<br>
+							<li>Communicating your research through mapping and other data visualization methods.</li>
+							<br>
+						</ol>
+					<aside class="notes"> 
+						Formally above, but what does it actually mean?
+						Background data, renaming files, data showing up in wrong place, packages to do specific tools, appropriate symbology, legal counsel, learning materials
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i> Library Support </h4><hr>
+						<div style="text-align:left;">
+							<ul style='text-indent: 5px;'>
+								<li>Consultations**</li> 
+								<li>Workshops & Classes</li>
+								<li>Online Resources</li>
+								<li>External Partnerships</li>
+							</ul>
+						</div>
+					<aside class="notes"> 
+					</aside>
+				</section>
+					
+				<section>
+					<h4><i class="em-svg em-desktop_computer" aria-role="presentation" aria-label=""></i>Upcoming Fall/ Winter Sessions<i class="em-svg em-desktop_computer" aria-role="presentation" aria-label=""></i></h4> <hr>
+							<ul style='text-indent: 5px; font-size:70%;'>
+								<li><del>October 28:</del> <a href = "https://lib-umanitoba.libcal.com/event/3576436" target="_blank">Intro. to Data Visualization - Sciences </a></li>
+								<li><del>November 18th:</del> <a href = "https://lib-umanitoba.libcal.com/event/3576413" target="_blank">Accessing Geospatial Data for Winnipeg & Manitoba</a></li>
+								<li><del>December 2nd:</del> <a href = "https://lib-umanitoba.libcal.com/event/3576419" target="_blank">Open Data: Manitoba Crop Inventory</a></li>
+								<li><del>January 20th:</del> <a href = "https://lib-umanitoba.libcal.com/event/3576443" target="_blank">QGIS 1: A Gentle Introduction to Open Source GIS Software</a></li>
+								<li><del>Feburary 10th:</del> <a href = "https://lib-umanitoba.libcal.com/event/3576456" target="_blank">PowerBI 1: A Gentle Introduction to Data Dashboards</a></li>
+								<li>Feburary 24th: <a href = "https://lib-umanitoba.libcal.com/event/3576400" target="_blank">Infographics: An Introduction</a></li>
+								<li>March 10th: <a href = "https://lib-umanitoba.libcal.com/event/3576403" target="_blank">ArcGIS Spatial Analytics: Insights & Dashboards for ArcGIS</a></li>
+								<li>March 24th: <a href = "https://lib-umanitoba.libcal.com/event/3576404" target="_blank">Data Visualization: the Good, the Bad and the Ugly</a></li>
+								<li>April 7th: <a href = "https://lib-umanitoba.libcal.com/event/3576405" target="_blank">Network Analysis and Visualization Using Gephi - An Introduction</a></li>
+							</ul>
+						<small>(Wednesdays 12:00 to 13:00)</small>
+						<aside class="notes">
+						Sessions in the coming months, all these are clickable links
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i> Workshops: ESRI training- Cynthia Dietz </h4><hr>
+						<img data-src="imgs/Dietz.PNG" alt="Workshop content">						
+					<aside class="notes">
+					Map Showing Children Less than 15 Years Old Experiencing High Poverty within 2016 Census Dissemination Areas and Neighborhoods with High Poverty Based on Market Basket Measures
+					</aside>
+				</section>
+								
+				<section class="fig-container" data-file="https://libguides.lib.umanitoba.ca/viz">
+					<aside class="notes">
+						Tour time :)
+					</aside>
+				</section>
+				
+				<section class="fig-container" data-file="https://gishub-univmb.hub.arcgis.com/">
+					<aside class="notes">
+						<p style="text-align:left; font-size:90%;"> Semi-automated management and integration of UM ESRI site license; </p>
+						<p style="text-align:left; font-size:90%;"> Discovery and access point for proprietary and open researcher data; </p>
+						<p style="text-align:left;font-size:90%;"> Secure local environment for active-use geospatial datasets. </p>
+					</aside>
+				</section>
+				
+				<section>
+					<h4>External Partnerships: </h4><hr><br>
+						<i class="em-svg em-male-technologist" aria-role="presentation" aria-label=""></i><i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i> + <i class="em-svg em-female-office-worker" aria-role="presentation" aria-label=""></i> <i class="em-svg em-school" aria-role="presentation" aria-label="SCHOOL"></i> + <i class="em-svg em-spiral_calendar_pad" aria-role="presentation" aria-label=""></i><i class="em-svg em-spiral_calendar_pad" aria-role="presentation" aria-label=""></i> + <i class="em-svg em-male-office-worker" aria-role="presentation" aria-label=""></i><i class="em-svg em-office" aria-role="presentation" aria-label="OFFICE BUILDING"></i> = <i class="em-svg em-unlock" aria-role="presentation" aria-label="OPEN LOCK"></i><br>
+						<p style="text-align:center;">This is a lot.</p>
+					<aside class="notes"> 
+					</aside>
+				</section>
+				
+				<section>
+					<i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Consultations </h4><hr>
+						<div style="text-align:left;">
+							<ul style='font-size:85%; text-indent: 5px;'>
+								<li>Your expertise - be kind to your future self;</li> 
+								<li>Purpose - exploratory vs. explanatory;</li>
+								<li>Audience - expertise, mediation;</li>
+								<li>Data requirements - size, residency, privacy... </li>
+							</ul>
+						</div>
+					<aside class="notes"> 
+					</aside>
+				</section>
+				
+				<section>
+					<h4> Researcher Examples</h4><br>
+						<h3> <i class="em-svg em-female-office-worker" aria-role="presentation" aria-label=""></i> <i class="em-svg em-male-technologist" aria-role="presentation" aria-label=""></i> <i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i></h3>
+					<aside class="notes">
+					</aside>
+				</section>
+												
+				<section data-background-image="imgs/Koper.PNG">
+					<div class="image-slide">
+					<h3>How have COVID-19 lockdowns affected North America’s birds?</h3>
+					<p style="text-align:center;">Koper Lab Group (NRI)</p>
+					</div>
+					<aside class="notes">
+					•	We are using publicly available information to evaluate how bird abundances changed in 2020 compared to previous years
+					•	GIS data: Raster image of land cover (CEC, 2015), cities population (Canada and USA Census), major roads (ESRI, 2010), and international airport locations (Canada and USA Federal Aviation) 
+					•	Effect of lockdown on human movements: Google Mobility data https://www.google.com/covid19/mobility/
+					•	Over 4 million bird observations: https://ebird.org/
+					</aside>
+				</section>
+				
+				<section data-background-image="imgs/Bacola.PNG">
+					<div class="image-slide">
+					<h3>Establishing a Sacral Landscape: <br> The development of Abbot Ingulph's record of Crowland's holdings in 1805.</h3>
+					<p style="text-align:center;">Meredith Bacola (Jesuit Studies)</p>
+					</div>
+					<aside class="notes">
+					Contained in the Historis Croilandensis, . The reason that this research is so useful, is that this part of England's landscape was drained through a series of canals in 1603 and the abbey's community was dissolved in 1539, dramatically transforming the history of the church and its landscape. The project has clarified many theories that I had about the development of monastic estates and elucidated new, unexpected directions. 
+					</aside>
+				</section>
+				
+				<section data-background-image="imgs/Durkin.PNG">
+					<div class="image-slide">
+					<h3>Northern Tornadoes Project. </h3>
+					<p style="text-align:center;">Paul Durkin (Geological Sciences)</p>
+					</div>
+					<aside class="notes">
+					Has been undertaken with a primary goal of studying tornado occurrence in Canada and assessing true tornado risk in collaboration with UWO, Environment Canada, The weather Network
+					</aside>
+				</section>
+								
+				<section data-background-image="imgs/Handkamer.PNG">
+					<div class="image-slide">
+					<h3>Exterior Space Inventory, Campus Tree Inventory, Integration with work-order management.</h3>
+					<p style="text-align:center;">Kevin Handkamer (Campus Planning)</p>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-background-image="imgs/hanuschuk.PNG">
+					<div class="image-slide">
+					<h3>How does human-mediated landscape disturbance affect wild bee communities in southern Manitoba? </h3>
+					<p style="text-align:center;">Emily Hanuschuk (Agriculture)</p>
+					</div>
+					<aside class="notes">
+					We basically looked at the impacts of landscape composition/configuration, local vegetation, and soil properties on bee abundance, richness, and functional diversity over two years. The R code was to extract the landscape-level data from the Ag-Canada Crop Inventory GEOTIFF layers.  
+					</aside>
+				</section>
+
+				<section data-background-image="imgs/Jahan.PNG">
+					<div class="image-slide">
+					<h3>Temperature and Depression: Evidence from Canadian Health Regions.</h3>
+					<p style="text-align:center;">Nusrat Jahan (Economics)</p>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-background-image="imgs/Laidlaw.PNG">
+					<div class="image-slide">
+					<h3>Nest-site Characteristics, Population Distribution and Home Range of Urban Merlins (Falco columbarius) in Winnipeg, Manitoba.</h3>
+					<p style="text-align:center;">Justine Josephson-Laidlaw (Environment & Geography)</p>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section data-background-image="imgs/Architecture.PNG">
+					<div class="image-slide">
+					<h3>Studio classes & Capstone projects.</h3>
+					<p style="text-align:center;">Students (Architecture)</p>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-background-image="imgs/NCTR.PNG">
+					<div class="image-slide">
+					<h3>Mapping Canada's Residential Schools.</h3>
+					<p style="text-align:center;">National Centre for Truth and Reconciliation & UML</p>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section data-background-image="imgs/Nexus.PNG">
+					<div class="image-slide">
+					<h3>Mapping Perception of French in Manitoba (On-hold due to COVID).</h3>
+					<p style="text-align:center;">Verónica Loureiro-Rodríguez (Linguistics)</p>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>	
+
+				<section data-background-image="imgs/Regehr.PNG">
+					<div class="image-slide">
+					<h3>The Manitoba Highway Traffic Information System. </h3>
+					<p style="text-align:center;">Jonathan Regehr Group (Engineering)</p>
+					</div>
+					<aside class="notes">
+					research collaboration between Manitoba Infrastructure and the University of Manitoba Transport Information Group, directed by Dr. Jonathan Regehr, P.Eng. The collaboration included the dissemination of traffic data for Manitoba’s highways through a public-facing, interactive maps.
+					</aside>
+				</section>	
+								
+				<section>
+					<h3>Questions<i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i></h3>
+					<hr>
+					<br>
+					<a href = "mailto:meg.miller@umanitoba.ca" target="_blank">meg.miller@umanitoba.ca</a><br><br>
+					feedback: <a href = "http://bit.ly/" target="_blank">bit.ly/ _____ </a></p>
+					slides: <a href = "https://bit.ly/thompson_w2021" target="_blank">bit.ly/thompson_w2021 </a>
+					<aside class="notes">
+						Thanks for coming!
+					</aside>
+				</section>
+								
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/reveald3.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
