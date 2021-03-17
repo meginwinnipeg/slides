@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Research Visualization: Analyzing & Visualizing</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/uml.css">				
+		<!-- emoji style -->
+		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!-- Theme for emoji styles -->
+		<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+		
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h3><br> <i class="em-svg em-gear" aria-role="presentation" aria-label=""></i>  Step 3: Analyzing & Visualizing </h3> 
+					<hr>
+					<br>
+					 
+					<aside class="notes">
+					</aside>
+				</section> 
+				
+				
+				<section>
+					<h4> Getting Started: </h4><hr>
+						<p style="text-align:left;"><i class="em-svg em-hammer_and_wrench" aria-role="presentation" aria-label=""></i> Select the appropriate analysis techniques for your data. </p>
+						<p style="text-align:left; "><i class="em-svg em-hammer_and_wrench" aria-role="presentation" aria-label=""></i> Symbology choices should clarify your theme.</p>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Key Questions - Analysis </h4><hr>
+					<div style="text-align:left;">
+								<ol style='font-size:85%;'>
+									<li>Is your data continuous or discrete?</li> <br>
+									<li>Are you blinding people with science?</li> <br>
+									<li>Is your analysis meaningful?</li> 
+								</ol>
+					</div>
+					<aside class="notes"> 
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Key Points - Symbology(1) </h4><hr>
+								<ol style='font-size:85%;'>
+									<li>If classifying, 3-5 classes are ideal (5-7 at most).</li> <br>
+									<li>Use hue for discrete data, value for continuous.</li> <br>
+								</ol>
+					<aside class="notes"> 
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Key Points - Symbology(2) </h4><hr>
+								<ol style='font-size:95%;'>
+									<li>Give people what they are expecting to see:<br> (blue =<font color="blue">water</font>, red = <font color="red">bad</font>, thick = <strong>dominant</strong>...)</li> <br>
+									<li>If only using colour to delineate, use an accessibility checker.</li> <br>
+								</ol>
+					<aside class="notes"> 
+					</aside>
+				</section>
+				
+				
+				<section class="fig-container" data-file="https://colorbrewer2.org">
+					<aside class="notes">
+						Think of who is going to be creating what you are looking for, and what format it might be in.
+					</aside>
+				</section>
+										
+				<section>
+					<h4><i class="em-svg em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i> Creating and updating content in ArcGIS Online </h4><hr>
+						<img data-src="img/visualizeex.PNG" alt="Workshop content" style="border:12px solid  #fcfcfc">
+					<aside class="notes">
+					</aside>
+				</section>
+								
+
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/reveald3.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
