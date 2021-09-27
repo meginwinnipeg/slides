@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Introduction to Data Visualization</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/uml.css">				
+		<!-- emoji style -->
+		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!-- Theme for emoji styles -->
+		<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+		
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h3><br><br><i class="em-svg em-bar_chart" aria-role="presentation" aria-label="BAR CHART"></i>  Intro to Data Visualization  <i class="em-svg em-earth_americas" aria-role="presentation" aria-label="EARTH GLOBE AMERICAS"></i> </h3>
+					<hr>
+					<br>
+					<p style="text-align:center;">Meg Miller - GIS & Data Visualization Librarian</p><br>
+					<p style="text-align:right;font-size:75%;">workshop: <a href = "https://bit.ly/idv_f2021" target="_blank">bit.ly/idv_f2021 </a></p>
+					 
+					<aside class="notes">
+						Research Services Digital Strategies Team,
+						Ex cartographer,
+						Elizabeth Dafoe, now virtual,
+						Answer common questions about accessing and using the federal crop inventory.
+					</aside>
+				</section>
+				
+				
+				<section>
+					<h4><i class="em-svg em-pencil2" aria-role="presentation" aria-label="PENCIL"></i> Outline </h4><hr>
+						<div style="text-align:left;">
+						<ol style='font-size:85%;'>
+							<li>List the types of data which can be viewed/analyzed;</li><br>
+							<li>Identify considerations to be taken at different steps in the analytics cycle;</li><br>
+							<li>Compare Visualization software programs.</li>
+						</ol>
+						</div>
+					<aside class="notes"> 
+						What we're covering to meet the previously mentioned ojectives
+					</aside>
+				</section>
+				
+				<section>
+					<h4> Why visualize <i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i></h4><hr><br>
+						 Display complex information in a way that makes it <b>easier</b> for your end user to explore or understand what you have done.
+					<aside class="notes"> 
+						which is basically jargon for “data/information which you would display with a map
+					</aside>
+				</section>
+				
+				<section>
+					<h4>We don't want 'chart junk'.</h4><hr>
+						<img data-src="img/chartjunk.PNG" alt="samples">
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section data-background-image="img/panopticon.PNG">
+					<div class="image-slide">
+					<h3><a href = "https://www.digitalpanopticon.org/" target="_blank">The Digital Panopticon-</a></h3><h4>Tracing London Convicts in Britain & Australia, 1780-1925</h4>
+					</div>
+					<aside class="notes">
+						Tour time :)
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i> Data Types? </h4><hr>
+						<div style="text-align:left;">
+							<ul>
+								<li>Tabular/textual</li> 
+								<li>Vector</li>
+								<li>Raster</li>
+							</ul>
+						</div>
+					<aside class="notes"> 
+						Each can be converted to each other. There just needs to be a geographic component so the software knows where the data lives
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Data Types: Tabular </h4><hr>
+						<img src="img/tabulareg.png" alt="Screenshot of a table"> 
+					<aside class="notes"> 
+						table or text file
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Data Types: Vector (point, line, polygon) </h4><hr><br>
+						<img data-src="img/vectoreg.png" alt="points, lines and areas"> 
+					<aside class="notes"> 
+						points, lines and areas. each point has an x,y (lat/long) coordinate pair associated with it
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Data Types: Raster </h4><hr>
+						<img src="img/rastereg.png" alt="screenshot of a raster image"> 
+					<aside class="notes"> 
+						A grid made of cells/ pixels(.jpg, .tiff, .grid, .rast…)
+					</aside>
+				</section>
+				
+				<section>
+					<h4> <i class="em-svg em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i> Finding:</h4><hr>
+					<div style="text-align:left;">
+							<ol style='font-size:90%;'>
+								<li>What are we creating?</li><br> 
+								<li>What do we need to supplement it?</li><br>
+								<li>What software will we use?</li>
+							</ol>
+							</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section data-background-image="img/umlhome.PNG">
+					<div class="image-slide">
+					<h3><a href = "https://umanitoba.ca/libraries/" target="_blank">Where can you find data to support your research?</a></h3>
+					</div>
+					<aside class="notes">
+						Tour time :)
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Digitization Services </h4><hr>
+						<img src="img/digitization.png" alt="photo of a scanner"> 
+					<aside class="notes"> 
+						The Libraries offer digitization services to students and faculty members for a fee. But every semester, students can get one free digitization order using a tabletop scanner. For large sized documents such as maps or fragile and rare books, the Libraries can digitize using the DSLR camera or the large format scanner. 
+					</aside>
+				</section>
+				
+				<section>
+					<h4> <i class="em-svg em-broom" aria-role="presentation" aria-label="BROOM"></i> Cleaning:</h4><hr>
+					<div style="text-align:left;">
+							<ol style='font-size:90%;'>
+								<li>What does your data look like?</li><br> 
+								<li>How are you going to proof it?</li>
+							</ol>
+							</div>
+					<aside class="notes">
+						Proofread: 
+						Check for errors, Obvious outliers, Typos Empty (null) rows. 
+
+						Ensure that columns are formatted as data types that correspond to how you will use their data. 
+						Years as  number not date
+
+						Remove introductory text such as titles or legends which might appear apart from your column headers
+						Avoid spaces, merged cells and special chars in column headers. 
+						For example, age (months) might be age_months; “birthday” could be “birthdate”.
+
+						Use consistent categories and units  qualitative or quantitative. 
+					</aside>
+				</section>
+				
+				<section>
+					<h4> <i class="em-svg em-male-cook" aria-role="presentation" aria-label=""></i> Preparing:</h4><hr><br>
+						Your research data is clean, now what?
+					<aside class="notes">
+						Now that your personal data set is clean, what sort of dataset does your software need to ingest?
+						Format of the file and the data
+						Separate files or one master
+
+						Geospatial data: are your projections/ field types consistent?
+
+						If using data from multiple sources, ensure that column names are the same for the same types of data 
+						For example, if the data for “year of birth,” "birthday," and "year" are the same type of data, they should be defined as a single term such as “birthyear” in all your data sets. 
+						This consistency is especially important for joining and analyzing data sets that are derived from multiple sources or time periods
+						
+						Data cleaning is 60% of you
+
+						Create or Save structured data from spreadsheets in plain formats such as .CSV (comma separated values) 
+						Files from word processing software (e.g. Word) contain invisible formatting instructions that may later become mixed with your real data. 
+						Saving proprietary files as plain text files strips the propietary formatting information (e.g. font styles, indentation, comments, markup) and makes them widely accessible. 
+					</aside>
+				</section>
+				
+				<section>
+					<h4> <i class="em-svg em-toolbox" aria-role="presentation" aria-label="TOOLBOX"></i> Analyzing:</h4><hr><br>
+						<img src="img/disccon.PNG" alt="screenshot of discrete vs. continuous data on a map"> 
+					<aside class="notes">
+						What trend are you trying to show?
+						What is the appropriate type of analysis for your data?
+						Nominal, Ordinal, Ratio, Continuous vs. discrete
+
+						Software, especially ArcGIS is not smart, if you put something in, it will spit something out
+					</aside>
+				</section>
+				
+			    <section>
+					<h4> <i class="em-svg em-face_with_monocle" aria-role="presentation" aria-label="FACE WITH MONOCLE"></i> Visualizing:</h4><hr>
+					<div style="text-align:left;">
+					<p>How are you going to reach your audience?</p><br>
+							<ol style='font-size:90%;'>
+								<li>Platform & Content</li><br> 
+								<li>Be kind to your future self</li>
+							</ol>
+							</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section>
+					<h4> <i class="em-svg em-car" aria-role="presentation" aria-label="AUTOMOBILE"></i>   Tour time!</h4><hr>
+					<div style="text-align:left;">
+							<ul style='font-size:90%;'>
+								<li>  Database: <a href = "https://libguides.lib.umanitoba.ca/viz" target="_blank">bit.ly/1 </a> </li><br>
+								<li>  Interactive Map: <a href = "https://libguides.lib.umanitoba.ca/viz" target="_blank">bit.ly/2 </a></li><br>
+								<li>  Report (pdf): <a href = "https://libguides.lib.umanitoba.ca/viz" target="_blank">bit.ly/3 </a></li><br>
+								<li>  Website/ Blog: <a href = "https://libguides.lib.umanitoba.ca/viz" target="_blank">bit.ly/4 </a></li>
+							</ul>
+							</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section>
+					<h4> <i class="em-svg em-floppy_disk" aria-role="presentation" aria-label="FLOPPY DISK"></i> Archiving:</h4><hr>
+					<div style="text-align:left;">
+					<p>Think of the future...</p> 
+							<ol style='font-size:90%;'>
+								<li>Digital media lifespan</li><br> 
+								<li>Born digital records</li>
+							</ol>
+							</div>
+					<aside class="notes">
+						Once your research is complete and published, your data will still exist. Knowing what to do with your data is part of your research journey and responsibility. As you are creating your data, consider questions around data archiving strategies. 
+						
+						CD (2 - 5 years)
+						USB (5 - 10 years)
+						Hard Drives (3 - 5 years)
+						
+						It’s a good practice to have data in multiple digital media in case if one fails. For example, students can practice the ‘3-2-1’ backup strategy which advises one to have 3 copies of your data on two different media with one copy off-site for disaster recovery. We all heard stories of students losing their data because their computer crashed or they lost their USB stick. While students can implement long-term, digital preservation practices, nothing can last forever. The lifespan of digital media may depend on the number of accesses, write cycles, physical conditions, and storage. For example, a lifespan of a hard drive can last 3 to 5 years before some component fails. 
+
+						Another option students can do is to store their data in the cloud as long as they are not breaking any policies. 
+
+						Even born digital records can pose problems. If students use a proprietary software to create data, they have to keep in mind that information can be lost if the file is corrupted, the new version of the software cannot support the old file format for upload or to make any changes, and if the company that created the software no longer exists then you may not be able to download the software due to unavailability.
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Which tool to use? </h4><hr>
+						<img src="img/toolchoice.PNG" alt="screenshot of matrix"> 
+					<aside class="notes"> 
+					</aside>
+				</section>
+				
+				<section data-background-image="img/vizguide.PNG">
+					<div class="image-slide">
+					<h3>Libraries and Data Visualization</h3>
+					<h4><a href = "https://libguides.lib.umanitoba.ca/viz" target="_blank">https://libguides.lib.umanitoba.ca/viz </a></h4>
+					</div>
+					<aside class="notes">
+						Tour time :)
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Questions<i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i></h4>
+					<hr>
+					<br>
+					<a href = "mailto:meg.miller@umanitoba.ca" target="_blank">meg.miller@umanitoba.ca</a><br><br>
+					workshop: <a href = "https://bit.ly/idv_f2021" target="_blank">bit.ly/idv_f2021 </a>
+					<aside class="notes">
+						Thanks for coming!
+					</aside>
+				</section>
+								
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/reveald3.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
