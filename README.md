@@ -1,7 +1,7 @@
 ### Presentations
 [Sciences Grad Student Open House](https://meginwinnipeg.github.io/slides/sgsoh_w2020.html)  
 [Accessing Geospatial Data: Winnipeg & Manitoba](https://meginwinnipeg.github.io/slides/mod_w2020.html)  
-[Open Data: Annual Crop Inventory](https://meginwinnipeg.github.io/slides/aci_w2020.html)  
+[Open Data: Annual Crop Inventory](https://meginwinnipeg.github.io/slides/aci_w2021.html)  
 [NRI 7200: Data Visualization](https://meginwinnipeg.github.io/slides/thompson_w2021.html)  
 [Data Visualization: The Good, the Bad & the Ugly](https://meginwinnipeg.github.io/slides/dvgb_w2021.html)  
 [LARC 7340: Library Services](https://meginwinnipeg.github.io/slides/larc7340.html) 
