@@ -64,53 +64,6 @@
 				</section>
 				
 				<section>
-					<h4> What is GIS? </h4><hr>
-						<p style="text-align:left;"><i class="em-svg em-blue_book" aria-role="presentation" aria-label="BLUE BOOK"></i> Geographic Information System </p>
-						<p style="text-align:left;"><i class="em-svg em-blue_book" aria-role="presentation" aria-label="BLUE BOOK"></i> Any system used to analyze, capture or work with geospatial data. </p>
-					<aside class="notes"> 
-						which is basically jargon for “data/information which you would display with a map
-					</aside>
-				</section>
-				
-				<section>
-					<h4><i class="em-svg em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i> Data Types? </h4><hr>
-						<div style="text-align:left;">
-							<ul>
-								<li>Tabular/textual</li> 
-								<li>Vector</li>
-								<li>Raster</li>
-							</ul>
-						</div>
-					<aside class="notes"> 
-						Each can be converted to each other. There just needs to be a geographic component so the software knows where the data lives
-					</aside>
-				</section>
-				
-				<section>
-					<h4>Data Types: Tabular </h4><hr>
-						<img src="img/tabulareg.png" alt="Screenshot of a table"> 
-					<aside class="notes"> 
-						table or text file
-					</aside>
-				</section>
-				
-				<section>
-					<h4>Data Types: Vector (point, line, polygon) </h4><hr><br>
-						<img data-src="img/vectoreg.png" alt="points, lines and areas"> 
-					<aside class="notes"> 
-						points, lines and areas. each point has an x,y (lat/long) coordinate pair associated with it
-					</aside>
-				</section>
-				
-				<section>
-					<h4>Data Types: Raster </h4><hr>
-						<img src="img/rastereg.png" alt="screenshot of a raster image"> 
-					<aside class="notes"> 
-						A grid made of cells/ pixels(.jpg, .tiff, .grid, .rast…)
-					</aside>
-				</section>
-				
-				<section>
 					<h4>  Software Access: </h4><hr>
 						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Data Visualization LibGuide </p>
 						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Don't forget about training resources! </p>
@@ -130,10 +83,10 @@
 							<ul style='text-indent: 5px; font-size:70%;'>
 								<li><del>January 19th:</del> <a href = "https://umanitoba.zoom.us/meeting/register/u5wscu6prTwiGNdXQYTWTRFFUVYBBnjwQd6A" target="_blank">Open Data: Manitoba Crop Inventory</a></li>
 								<li><del>February 16th:</del> <a href = "https://umanitoba.zoom.us/meeting/register/u50uf-usrjgqEt3zG6saNIfDKkhN32ktwHFG" target="_blank">Introduction to data cleaning with OpenRefine & word clouds</a></li>								
-								<li>February 23rd: <a href = "https://umanitoba.zoom.us/meeting/register/u5Mqf-GurTorHNIPAOvjLrGMkjAA5LmQg71Z" target="_blank">QGIS 1: A Gentle Introduction to Open Source GIS Software</a></li>
-								<li>March 2nd: <a href = "https://umanitoba.zoom.us/meeting/register/u50tcOuvrTMjEtxp-ZgVV8EkSsPkBBKjnZYx" target="_blank">Infographics: An Introduction</a></li>
-								<li>March 9th: <a href = "https://umanitoba.zoom.us/meeting/register/u5YlcuCuqTosGNW96fetetssKuEBi2YMivLY" target="_blank">PowerBI 1: A Gentle Introduction to Data Dashboards</a></li>
-								<li>March 16th: <a href = "https://umanitoba.zoom.us/meeting/register/u5EqcO6sqzMsGNMY8iEZIUfsGXRltGlN5Y4T" target="_blank">Data Visualization: the Good, the Bad and the Ugly</a></li>
+								<li><del>February 23rd:</del> <a href = "https://umanitoba.zoom.us/meeting/register/u5Mqf-GurTorHNIPAOvjLrGMkjAA5LmQg71Z" target="_blank">QGIS 1: A Gentle Introduction to Open Source GIS Software</a></li>
+								<li><del>March 2nd:</del> <a href = "https://umanitoba.zoom.us/meeting/register/u50tcOuvrTMjEtxp-ZgVV8EkSsPkBBKjnZYx" target="_blank">Infographics: An Introduction</a></li>
+								<li><del>March 9th:</del> <a href = "https://umanitoba.zoom.us/meeting/register/u5YlcuCuqTosGNW96fetetssKuEBi2YMivLY" target="_blank">PowerBI 1: A Gentle Introduction to Data Dashboards</a></li>
+								<li><del>March 16th:</del> <a href = "https://umanitoba.zoom.us/meeting/register/u5EqcO6sqzMsGNMY8iEZIUfsGXRltGlN5Y4T" target="_blank">Data Visualization: the Good, the Bad and the Ugly</a></li>
 								<li>April 6th: <a href = "https://umanitoba.zoom.us/meeting/register/u5MuduGhqzopGd1emSHeDZUbBuDdIx5YhuWy" target="_blank">Network Visualization using VosViewer - An Introduction</a></li>
 							</ul> <br><br>
 						<small>(Wednesdays at noon)</small>
@@ -143,19 +96,71 @@
 				</section>
 				
 				<section>
-					<h4> <i class="em-svg em-unlock" aria-role="presentation" aria-label="OPEN LOCK"></i> Open GIS Software:</h4><hr>
+					<h4> <i class="em-svg em-unlock" aria-role="presentation" aria-label="OPEN LOCK"></i> Open Software workflow:</h4><hr>
 							<ol style='font-size:90%;'>
-								<li>Visualize + Contextualize: Google Earth</li> 
-								<li><strong>Perform Analysis: QGIS</strong></li>
-								<li>Visualize & Share: Leaflet, mapbox.js, Carto...</li>
+								<li>Visualize + Contextualize: Google Earth, OSM...</li> 
+								<li>Perform Analysis: QGIS, GRASS...</li>
+								<li><strong>Visualize & Share:</strong> Inkscape, GIMP, Leaflet, mapbox.js...</li>
 							</ol>
 					<aside class="notes">
 					</aside>
 				</section>
 				
+				
 				<section>
-					<h4><i class="em-svg em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i> Today's Session:<br> Rebuilding the John Hopkins Dashboard Map</h4><hr>
-						<img data-src="img/q1session.PNG" alt="Workshop content">
+					<h4><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Considerations when exporting from QGIS </h4><hr>
+						<div style="text-align:left;">
+							<ul>
+								<li>Labels</li> 
+								<li>Surround elements (scalebar, north arrow etc.)</li>
+								<li>File formats</li>
+							</ul>
+						</div>
+					<aside class="notes"> 
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Exporting: Labels </h4><hr>
+					<div style="text-align:left;">
+							<ul>
+								<li>Show all labels, even conflicting </li> 
+								<img src="img/labelq.PNG" alt="Screenshot label dialogue">
+								<li>Decide if you want to convert text to path </li> 
+								<img src="img/texttopath.PNG" alt="Screenshot text as path">								
+							</ul>
+						</div>						
+					<aside class="notes"> 
+						table or text file
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-world_map" aria-role="presentation" aria-label=""></i> Exporting: Surround elements </h4><hr>
+					<div style="text-align:left;">
+							<ul>
+								<li>Scale bar not scale text </li> 
+								<li>Legends</li> 
+								<li>North arrow</li> 							
+							</ul>
+						</div>						
+					<aside class="notes"> 
+						table or text file
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Exporting: File Formats </h4><hr>
+						<p style="text-align:left;"><i class="em-svg em-unlock" aria-role="presentation" aria-label="OPEN LOCK"></i> SVG </p>
+						<p style="text-align:left;"><i class="em-svg em-unlock" aria-role="presentation" aria-label="OPEN LOCK"></i> PDF </p>					
+					<aside class="notes"> 
+						table or text file
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i> Today's Session:<br> Inkscape- Tips for creating map layouts</h4><hr>
+						<img data-src="img/inkscape.PNG" alt="Workshop content">
 					<aside class="notes">
 						QGIS Tour of each
 					</aside>
