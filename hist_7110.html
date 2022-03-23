@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>GIS for Historians</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/uml.css">				
+		<!-- emoji style -->
+		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!-- Theme for emoji styles -->
+		<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+		
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			
+				<section>
+					<h3><br><br>A very spatial software session  <i class="em-svg em-earth_americas" aria-role="presentation" aria-label="EARTH GLOBE AMERICAS"></i></h3>
+					<hr>
+					<br>
+					<p style="text-align:center;">Meg Miller - GIS & Data Visualization Librarian</p><br>
+					<p style="text-align:right;font-size:75%;">slides: <a href = "https://bit.ly/hist_7110" target="_blank">bit.ly/hist_7110 </a></p>
+					 
+					<aside class="notes">
+						Research Services Digital Strategies Team,
+						Ex cartographer,
+						Elizabeth Dafoe, now virtual,
+						Answer common questions about accessing and using the federal crop inventory.
+					</aside>
+				</section>
+			
+				<section>
+					<h4><i class="em-svg em-pencil2" aria-role="presentation" aria-label="PENCIL"></i> Outline </h4><hr><br>
+						<div style="text-align:left;">
+						<ol style='font-size:90%;'>
+							<li>What is GIS?</li>
+							<li>Considerations for HGIS projects</li>
+							<li>Data Visualization and Campus Libraries</li>
+							<li>ArcGIS Online (workshop)</li>
+						</ol>
+						</div>
+					<aside class="notes"> 
+					</aside>
+				</section>
+				
+				<section>
+					<h4> What is GIS? </h4><hr>
+						<p style="text-align:left;"><i class="em-svg em-blue_book" aria-role="presentation" aria-label="BLUE BOOK"></i> Geographic Information System </p>
+						<p style="text-align:left;"><i class="em-svg em-blue_book" aria-role="presentation" aria-label="BLUE BOOK"></i> Any system used to analyze, capture or work with geospatial data. </p>
+					<aside class="notes"> 
+						which is basically jargon for “data/information which you would display with a map
+					</aside>
+				</section>
+				
+				
+				<section>
+					<h3 style="text-align:left;">1. What data types are used in GIS <i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i> </h3>
+					<br>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Data Types: Tabular </h4><hr>
+						<img src="img/tabulareg.png" alt="Screenshot of a table"> 
+					<aside class="notes"> 
+						table or text file
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Data Types: Vector (point, line, polygon) </h4><hr><br>
+						<img data-src="img/vectoreg.png" alt="points, lines and areas"> 
+					<aside class="notes"> 
+						points, lines and areas. each point has an x,y (lat/long) coordinate pair associated with it
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Data Types: Raster </h4><hr>
+						<img src="img/rastereg.png" alt="screenshot of a raster image"> 
+					<aside class="notes"> 
+						A grid made of cells/ pixels(.jpg, .tiff, .grid, .rast…)
+					</aside>
+				</section>
+				
+				<section>
+					<h3 style="text-align:left;">2. Then what is HGIS <i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i> </h3>
+					<br>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section>
+					<h3><br>"GIS enabled historical consciousness"</h3>
+					<br>
+					<p style="text-align:right;font-size:75%;"><i class="em-svg em-brain" aria-role="presentation" aria-label="BRAIN"></i>Sasha Mullally- UNB History Dept.</p> 
+					<aside class="notes">
+					</aside>
+				</section>
+						
+				<section>
+					<h4><i class="em-svg em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i></i> Popular processes: </h4><hr>
+					<div style="text-align:left;">
+								<ol>
+									<li><a href = "https://hed.esri.ca/apps/montreal375/" target="_blank">Digitization </a>of historical maps/images</li> 
+									<li>Reconstruction of <a href = "https://brock.maps.arcgis.com/apps/webappviewer/index.html?id=aaa35c3cd89e4cb3b63dc27f4d4e94ee" target="_blank">features </a>from the past</li>
+									<li>Georeferencing <a href = "https://nctr.ca/records/view-your-records/archival-map/" target="_blank">microdata </a></li> 
+								</ol>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-warning" aria-role="presentation" aria-label="WARNING SIGN"></i> Considerations: </h4><hr>
+					<div style="text-align:left;">
+								<ol>
+									<li>Data</li> 
+									<li><a href = "https://earth.google.com/web/@49.85458364,-97.14116982,225.30952158a,19178.77016485d,30y,0h,0t,0r/data=MikKJwolCiExN1ZKZGpET0VhMmRSZldIanBSck51TUZLUWJBaVJXZDMgAQ" target="_blank">Audience</a></li>
+									<li><a href = "https://mapwarper.net/" target="_blank">Time </a></li> 
+								</ol>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section>
+					<h3 style="text-align:left;">3. How can Libraries support me <i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i> </h3>
+					<br>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section>
+					<h4>  Library Support: </h4><hr>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Librarian Support </p>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Subject Guides </p>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Training opportunities </p>
+					<aside class="notes">
+						How can the Library help you?
+					</aside>
+				</section>
+				
+				<section class="fig-container" data-file="https://libguides.lib.umanitoba.ca/viz">
+					<aside class="notes">
+						Think of who is going to be creating what you are looking for, and what format it might be in.
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-desktop_computer" aria-role="presentation" aria-label=""></i>Upcoming Fall/ Winter Sessions<i class="em-svg em-desktop_computer" aria-role="presentation" aria-label=""></i></h4> <hr>
+							<ul style='text-indent: 5px; font-size:70%;'>
+								<li><del>January 19th:</del> <a href = "https://umanitoba.zoom.us/meeting/register/u5wscu6prTwiGNdXQYTWTRFFUVYBBnjwQd6A" target="_blank">Open Data: Manitoba Crop Inventory</a></li>
+								<li><del>February 16th:</del> <a href = "https://umanitoba.zoom.us/meeting/register/u50uf-usrjgqEt3zG6saNIfDKkhN32ktwHFG" target="_blank">Introduction to data cleaning with OpenRefine & word clouds</a></li>								
+								<li><del>February 23rd:</del> <a href = "https://umanitoba.zoom.us/meeting/register/u5Mqf-GurTorHNIPAOvjLrGMkjAA5LmQg71Z" target="_blank">QGIS 1: A Gentle Introduction to Open Source GIS Software</a></li>
+								<li><del>March 2nd:</del> <a href = "https://umanitoba.zoom.us/meeting/register/u50tcOuvrTMjEtxp-ZgVV8EkSsPkBBKjnZYx" target="_blank">Infographics: An Introduction</a></li>
+								<li><del>March 9th:</del> <a href = "https://umanitoba.zoom.us/meeting/register/u5YlcuCuqTosGNW96fetetssKuEBi2YMivLY" target="_blank">PowerBI 1:</del> A Gentle Introduction to Data Dashboards</a></li>
+								<li><del>March 16th:</del> <a href = "https://umanitoba.zoom.us/meeting/register/u5EqcO6sqzMsGNMY8iEZIUfsGXRltGlN5Y4T" target="_blank">Data Visualization: the Good, the Bad and the Ugly</a></li>
+								<li>April 6th: <a href = "https://umanitoba.zoom.us/meeting/register/u5MuduGhqzopGd1emSHeDZUbBuDdIx5YhuWy" target="_blank">Network Visualization using VosViewer - An Introduction</a></li>
+							</ul> <br><br>
+						<small>(Wednesdays at noon)</small>
+						<aside class="notes">
+						Sessions in the coming months, all these are clickable links
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Key Points: </h4><hr>
+						<div style="text-align:left;">
+							<ul style='font-size:85%; text-indent: 5px;'>
+								<li>Your expertise - be kind to your future self</li> 
+								<li>Purpose - exploratory vs. explanatory</li>
+								<li>Audience - expertise, mediation</li>
+								<li>Data requirements - size, residency, privacy... </li>
+							</ul>
+						</div>
+					<aside class="notes"> 
+					</aside>
+				</section>				
+				
+				
+				<section>
+					<h4><i class="em-svg em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i> Hands-on: Exploring ArcGIS Online</h4><hr>
+						<img data-src="img/q1session.PNG" alt="Workshop content">
+						<h4><a href = "https://univmb.maps.arcgis.com/home/index.html" target="_blank">Explore Content in ArcGIS Online </a></h4>
+					<aside class="notes">
+						QGIS Tour of each
+					</aside>
+				</section>				
+								
+								
+				<section>
+					<h3>Questions<i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i></h3>
+					<hr>
+					<br>
+					<a href = "mailto:meg.miller@umanitoba.ca" target="_blank">meg.miller@umanitoba.ca</a><br><br>
+					slides: <a href = "https://bit.ly/hist_7110" target="_blank">bit.ly/hist_7110</a>
+					<aside class="notes">
+						Thanks for coming!
+					</aside>
+				</section>
+								
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/reveald3.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
