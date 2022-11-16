@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Inkscape exercise – Tips for map layout editing</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/uml.css">				
+		<!-- emoji style -->
+		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!-- Theme for emoji styles -->
+		<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+		
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h3><br> Inkscape: <br> <i class="em-svg em-earth_americas" aria-role="presentation" aria-label="EARTH GLOBE AMERICAS"></i> Tips for creating map layouts <i class="em-svg em-lower_left_paintbrush" aria-role="presentation" aria-label=""></i></h3>
+					<hr>
+					<br>
+					<p style="text-align:center;">Meg Miller - GIS & Data Visualization Librarian</p><br>
+					<p style="text-align:right;font-size:75%;">workshop: <a href = "https://bit.ly/ink_gisday" target="_blank">bit.ly/ink_gisday </a></p>
+					 
+					<aside class="notes">
+						Research Services Digital Strategies Team,
+						Ex cartographer,
+						Elizabeth Dafoe, now virtual,
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-pencil2" aria-role="presentation" aria-label="PENCIL"></i> Outline </h4><hr>
+						<div style="text-align:left;">
+						<ol style='font-size:85%;'>
+							<li>Become familiar with popular graphics software;</li><br>
+							<li>Discuss QGIS Export Strategies</li><br>
+							<li>Inkscape Exercise:
+								<ul style='font-size:85%;'>
+									<li>The basics</li> 
+									<li>Edit a complex layout</li>
+								</ul>
+							</li>
+						</ol>
+						</div>
+					<aside class="notes"> 
+						What we're covering to meet the previously mentioned ojectives
+					</aside>
+				</section>
+				
+				<section>
+					<h4>  Software Access: </h4><hr>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Data Visualization LibGuide </p>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Don't forget about training resources! </p>
+					<aside class="notes">
+						How can the Library help you?
+					</aside>
+				</section>
+				
+				<section class="fig-container" data-file="https://libguides.lib.umanitoba.ca/viz">
+					<aside class="notes">
+						Think of who is going to be creating what you are looking for, and what format it might be in.
+					</aside>
+				</section>
+				
+				<section>
+					<h4> <i class="em-svg em-unlock" aria-role="presentation" aria-label="OPEN LOCK"></i> Open Software workflow:</h4><hr>
+							<ol style='font-size:90%;'>
+								<li>Visualize + Contextualize: Google Earth, OSM...</li> 
+								<li>Perform Analysis: QGIS, GRASS...</li>
+								<li><strong>Visualize & Share:</strong> Inkscape, GIMP, Leaflet, mapbox.js...</li>
+							</ol>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				
+				<section>
+					<h4><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Considerations when exporting from QGIS </h4><hr>
+						<div style="text-align:left;">
+							<ul>
+								<li>Labels</li> 
+								<li>Surround elements (scalebar, north arrow etc.)</li>
+								<li>File formats</li>
+							</ul>
+						</div>
+					<aside class="notes"> 
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Exporting: Labels </h4><hr>
+					<div style="text-align:left;">
+							<ul>
+								<li>Show all labels, even conflicting </li> 
+								<img src="img/labelq.PNG" alt="Screenshot label dialogue">
+								<li>Decide if you want to convert text to path </li> 
+								<img src="img/texttopath.PNG" alt="Screenshot text as path">								
+							</ul>
+						</div>						
+					<aside class="notes"> 
+						table or text file
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-world_map" aria-role="presentation" aria-label=""></i> Exporting: Surround elements </h4><hr>
+					<div style="text-align:left;">
+							<ul>
+								<li>Scale bar not scale text </li> 
+								<li>Legends</li> 
+								<li>North arrow</li> 							
+							</ul>
+						</div>						
+					<aside class="notes"> 
+						table or text file
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Exporting: File Formats </h4><hr>
+						<p style="text-align:left;"><i class="em-svg em-unlock" aria-role="presentation" aria-label="OPEN LOCK"></i> SVG </p>
+						<p style="text-align:left;"><i class="em-svg em-unlock" aria-role="presentation" aria-label="OPEN LOCK"></i> PDF </p>					
+					<aside class="notes"> 
+						table or text file
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i> Today's Session:<br> Inkscape- Tips for creating map layouts</h4><hr>
+						<img data-src="img/inkscape.PNG" alt="Workshop content">
+					<aside class="notes">
+						QGIS Tour of each
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Questions<i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i></h4>
+					<hr>
+					<br>
+					<a href = "mailto:meg.miller@umanitoba.ca" target="_blank">meg.miller@umanitoba.ca</a><br><br>
+					workshop: <a href = "https://bit.ly/ink_gisday" target="_blank">bit.ly/ink_gisday </a>
+					<aside class="notes">
+						Thanks for coming!
+					</aside>
+				</section>
+								
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/reveald3.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
