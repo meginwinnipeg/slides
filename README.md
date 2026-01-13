@@ -10,4 +10,5 @@
 [Gentle Introduction to Data Dashboards](https://meginwinnipeg.github.io/slides/pbi_s2021.html)  
 [Introduction to Infographics](https://meginwinnipeg.github.io/slides/pikto_w2021.html)  
 [ArcGIS Spatial Analytics: Insights & Dashboards](https://meginwinnipeg.github.io/slides/spa_w2021.html)  
+[ArcGIS Spatial Analytics: Insights & Dashboards](https://meginwinnipeg.github.io/slides/spa_w2021.html)
 
