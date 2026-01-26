@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Data Cleaning with OpenRefine</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/uml.css">				
+		<!-- emoji style -->
+		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!-- Theme for emoji styles -->
+		<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+		
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			
+				<section>
+					<h3><br><br>Intro to Data Cleaning with OpenRefine  <i class="em-svg em-broom" aria-role="presentation" aria-label="BROOM"></i></h3>
+					<hr>
+					<br>
+					<p style="text-align:center;">Meg Miller - GIS & Data Visualization Librarian</p><br>
+					<p style="text-align:right;font-size:75%;">slides: <a href = "https://bit.ly/dataclean target="_blank">bit.ly/dataclean </a></p>
+					 
+					<aside class="notes">
+						Research Services Digital Strategies Team,
+						Ex cartographer,
+						Elizabeth Dafoe, now virtual,
+						Answer common questions about accessing and using the federal crop inventory.
+					</aside>
+				</section>
+			
+				<section>
+					<h4><i class="em-svg em-pencil2" aria-role="presentation" aria-label="PENCIL"></i> Outline </h4><hr><br>
+						<div style="text-align:left;">
+						<ol style='font-size:90%;'>
+							<li>Software overview</li>
+							<li>Data cleaning defined</li>
+							<li>Benefits</li>
+							<li>Hands-on Exercise</li>
+						</ol>
+						</div>
+					<aside class="notes"> 
+					</aside>
+				</section>
+				
+				<section>
+					<h3 style="text-align:left;"> What is OpenRefine <i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i> </h3>
+					<br>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section>
+					<h4>  In short: </h4><hr>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Open tool </p>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Runs in web browser </p>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Can be as complicated as you want </p>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> For data cleaning </p>
+					<aside class="notes">
+						How can the Library help you?
+					</aside>
+				</section>
+				
+				<section>
+					<h3 style="text-align:left;"> What is data cleaning <i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i> </h3>
+					<br>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Improving the overall quality of your data. </h4><hr><br>
+						<img data-src="img/messycloud.PNG" alt="points, lines and areas"> 
+					<aside class="notes"> 
+					</aside>
+				</section>
+
+				<section>
+					<h4>  Main categories: </h4><hr>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Resolving inconsistencies </p>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Formatting </p>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Null values </p>
+					<aside class="notes">
+						How can the Library help you?
+					</aside>
+				</section>
+				
+				<section>
+					<h4>Resolving Inconsistencies: </h4><hr><br>
+						<img data-src="img/cleandata2.png" alt="points, lines and areas"> 
+						<p style="text-align:left;"> Variant spelling, inconsistent case, duplication... </p>
+					<aside class="notes"> 
+					</aside>
+				</section>
+				
+				<section>
+					<h4>  Formatting: </h4><hr>
+						<p style="text-align:left;"><i class="em-svg em-straight_ruler" aria-role="presentation" aria-label="STRAIGHT RULER"></i>> Unit of measurement </p>
+						<p style="text-align:left;"><i class="em-svg em-date" aria-role="presentation" aria-label="CALENDAR"></i>> Dates, text, numbers </p>
+						<p style="text-align:left;"><i class="em-svg em-arrows_clockwise" aria-role="presentation" aria-label="CLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS"></i> Columns/ rows </p>
+						<p style="text-align:left;"><i class="em-svg em-wrench" aria-role="presentation" aria-label="WRENCH"></i> Format migration </p>
+					<aside class="notes">
+						How can the Library help you?
+					</aside>
+				</section>
+				
+				<section>
+					<h4>  Benefits: </h4><hr>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Efficient research </p>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Easier conversion </p>
+						<p style="text-align:left;"><i class="em-svg em-bulb" aria-role="presentation" aria-label="ELECTRIC LIGHT BULB"></i> Secondary use </p>
+					<aside class="notes">
+						How can the Library help you?
+					</aside>
+				</section>
+				
+				<section>
+					<h4><i class="em-svg em-scissors" aria-role="presentation" aria-label="BLACK SCISSORS"></i> Hands-on: Cleaning some messy data with OpenRefine</h4><hr>
+						<img data-src="https://meginwinnipeg.github.io/workshops/content/handson/openrefine/content/img/step3.PNG" alt="Workshop content">
+					<aside class="notes">
+					</aside>
+				</section>
+				
+									
+				<section>
+					<h3>Questions<i class="em-svg em-question" aria-role="presentation" aria-label="BLACK QUESTION MARK ORNAMENT"></i></h3>
+					<hr>
+					<br>
+					<a href = "mailto:meg.miller@umanitoba.ca" target="_blank">meg.miller@umanitoba.ca</a><br><br>
+					slides: <a href = "https://bit.ly/dataclean" target="_blank">bit.ly/dataclean</a>
+					<aside class="notes">
+						Thanks for coming!
+					</aside>
+				</section>
+								
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/reveald3.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
